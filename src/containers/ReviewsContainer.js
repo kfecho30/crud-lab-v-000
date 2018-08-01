@@ -15,4 +15,4 @@ class ReviewsContainer extends Component {
   }
 }
 
-export default ReviewsContainer
+export default connect()(ReviewsContainer)
