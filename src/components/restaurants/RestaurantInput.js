@@ -4,7 +4,10 @@ class RestaurantInput extends Component {
   render() {
     return (
       <div>
-        Restaurant Input
+        <form onSubmit={}>
+          <input type="text"/>
+          <input type="submit"/>
+        </form>
       </div>
     );
   }
