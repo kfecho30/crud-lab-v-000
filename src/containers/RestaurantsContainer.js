@@ -17,4 +17,8 @@ class RestaurantsContainer extends Component {
 
 mapStateToProps = ({ restaurants }) => ({restaurants})
 
+mapDispatchToProps = dispatch => ({
+  addRestaurant: text => dispatch({type: "ADD_RESTAURANT", text})
+})
+
 export default connect(mapStateToProps, mapDispatchToProps)(RestaurantsContainer)
