@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 
 class RestaurantInput extends Component {
-  constructor(){
-    super();
-    this.state={
-      text:'',
-    }
+  state={
+    text:'',
   }
+
 
   handleChange = e => {
     this.setState({text: e.target.value})
