@@ -14,8 +14,8 @@ export default function manageRestaurants(state = {restaurants:[], reviews:[]}, 
     case "ADD_REVIEW":
       const review = {
         id: cuid(),
-        text: action.text,
-        restuarantId: action.restaurantId
+        text: action.reviews.text,
+        restuarantId: action.reviews.restaurantId
       }
       return {reviews: state.reviews.concat(review)}
     case "DELETE_REVIEW":
