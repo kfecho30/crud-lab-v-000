@@ -15,7 +15,7 @@ class RestaurantsContainer extends Component {
   }
 }
 
-const mapStateToProps = state => ({ restaurants: state.restaurants })
+const mapStateToProps = ({ restaurants }) => ({restaurants})
 
 const mapDispatchToProps = dispatch => ({
   addRestaurant: text => dispatch({type: "ADD_RESTAURANT", text}),
