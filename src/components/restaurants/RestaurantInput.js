@@ -7,6 +7,11 @@ class RestaurantInput extends Component {
       text:'',
     }
   }
+
+  handleChange = e =>{
+    
+  }
+
   render() {
     return (
       <div>
