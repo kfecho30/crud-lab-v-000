@@ -14,10 +14,10 @@ export default function manageRestaurants(state = {restaurants:[], reviews:[]}, 
     case "ADD_REVIEW":
       const review = {
         id: cuid(),
-        text: action.text
-        restuarantID: action.restaurantID
+        text: action.review.text,
+        restuarantID: action.review.restaurantID
       }
-      return {restaurants: state.restaurants.concat(restaurant)}
+      return {reviews: state.restaurants.reviews.concat(review)}
     case "DELETE_RESTAURANT":
       return {restaurants: state.restaurants.filter(restaurant => restaurant.id !== action.id)}
     default:
