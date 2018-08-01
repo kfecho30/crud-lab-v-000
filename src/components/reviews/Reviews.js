@@ -11,7 +11,7 @@ class Reviews extends Component {
   render() {
     return (
       <ul>
-        Reviews
+        {reviewList}
       </ul>
     );
   }
