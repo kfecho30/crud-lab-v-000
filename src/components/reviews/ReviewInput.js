@@ -25,7 +25,7 @@ class ReviewInput extends Component {
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
         </form>
       </div>
     );
