@@ -15,4 +15,6 @@ class ReviewsContainer extends Component {
   }
 }
 
-export default connect()(ReviewsContainer)
+const mapDispatchToProps =
+
+export default connect(mapDispatchToProps)(ReviewsContainer)
