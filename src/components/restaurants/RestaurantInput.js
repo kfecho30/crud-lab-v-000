@@ -9,14 +9,14 @@ class RestaurantInput extends Component {
   }
 
   handleChange = e =>{
-    
+
   }
 
   render() {
     return (
       <div>
         <form onSubmit={}>
-          <input type="text"/>
+          <input type="text" onChange={this.handleChange}/>
           <input type="submit"/>
         </form>
       </div>
