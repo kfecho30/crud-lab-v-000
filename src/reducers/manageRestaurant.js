@@ -5,7 +5,7 @@ export default function manageRestaurants(state = {restaurants:[], reviews:[]}, 
   switch(action.type){
     case "ADD_RESTAURANT":
       const restaurant = {
-        id: cuid(),
+        id: cuidFn(),
         text: action.text
       }
       return {restaurants: state.restaurants.concat(restaurant)}
@@ -13,7 +13,7 @@ export default function manageRestaurants(state = {restaurants:[], reviews:[]}, 
       return {restaurants: state.restaurants.filter(restaurant => restaurant.id !== action.id)}
       case 'ADD_REVIEW':
 
-        const review = { text: action.review.text, restaurantId: action.review.restaurantId, id: cuid() };
+        const review = { text: action.review.text, restaurantId: action.review.restaurantId, id: cuidFn() };
         return { ...state,
           reviews: [...state.reviews, review]
         }
