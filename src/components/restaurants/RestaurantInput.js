@@ -8,8 +8,12 @@ class RestaurantInput extends Component {
     }
   }
 
-  handleChange = e =>{
+  handleChange = e => {
+    this.setState({e.target.value})
+  }
 
+  handleSubmit = e => {
+    e.preventDefault();
   }
 
   render() {
