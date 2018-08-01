@@ -8,7 +8,7 @@ export default function manageRestaurants(state, action) {
         id: cuid(),
         text: action.text
       }
-      return {state.restaurants.concat(action.text)}
+      return {state.restaurants.concat(restaurant)}
     default:
       return state;
   }
